@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#176b43">
+  <title>RJ STORE | Your Neighbourhood Grocery Shop</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #243126;
+      background: #f7f8f3;
+    }
+    header {
+      background: #176b43;
+      color: white;
+      padding: 25px 18px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 30px; }
+    header p { margin: 0; line-height: 1.6; }
+    nav {
+      background: white;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 8px #0001;
+    }
+    nav a {
+      color: #176b43;
+      margin: 0 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    main { max-width: 900px; margin: auto; padding: 20px 14px; }
+    .welcome {
+      background: #e6f3e8;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 22px;
+    }
+    .welcome h2 { margin-top: 0; color: #176b43; }
+    input {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 9px;
+      font-size: 16px;
+      margin: 8px 0 20px;
+    }
+    h2.section-title { color: #176b43; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+      gap: 12px;
+    }
+    .product {
+      background: white;
+      border: 1px solid #e4e8e1;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 5px #00005;
+    }
+    .emoji { font-size: 35px; }
+    .product h3 { margin: 8px 0; font-size: 17px; }
+    .product p { color: #59645a; font-size: 14px; line-height: 1.5; }
+    .price { color: #176b43; font-weight: bold; }
+    .notice {
+      margin-top: 24px;
+      padding: 15px;
+      background: white;
+      border-radius: 10px;
+      line-height: 1.6;
+    }
+    .whatsapp {
+      display: block;
+      background: #168b4c;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-top: 18px;
+    }
+    footer {
+      background: #143d2b;
+      color: white;
+      text-align: center;
+      padding: 22px 15px;
+      margin-top: 25px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RJ STORE</h1>
+    <p>Your neighbourhood grocery shop</p>
+    <p>Fresh produce • Everyday essentials • Friendly service</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main id="home">
+    <section class="welcome">
+      <h2>Welcome to RJ STORE!</h2>
+      <p>Find everyday food items and household cooking essentials
+      in one convenient place.</p>
+      <p><strong>Location:</strong> Baage Avenue, Imedu-Nla, Mowe, Ogun State.</p>
+    </section>
+
+    <h2 class="section-title" id="products">Explore our products</h2>
+    <p>Search for an item below. Contact us to confirm current prices
+    and availability.</p>
+    <input id="search" type="search" placeholder="Search rice, pepper, drinks..." aria-label="Search products">
+
+    <div class="grid" id="productGrid">
+      <article class="product" data-name="rice">
+        <div class="emoji">🍚</div>
+        <h3>Rice</h3>
+        <p>Available in different local measurements. Ask about derica, cup and paint measurements.</p>
+        <div class="price">Ask for price</div>
+      </article>
+      <article class="product" data-name="beans">
+        <div class="emoji">🫘</div>
+        <h3>Beans</h3>
+        <p>Everyday cooking essentials.</p>
+        <div class="price">Ask for price</div>
+      </article>
+      <article class="product" data-name="garri amala">
+        <div class="emoji">🥣</div>
+        <h3>Garri & Amala</h3>
+        <p>White and yellow garri, white and black amala.</p>
+        <div class="price">Ask for price</div>
+      </article>
+      <article class="product" data-name="pepper tomatoes onions bawa">
+        <div class="emoji">🌶️</div>
+        <h3>Fresh Produce</h3>
+        <p>Pepper, bawa, tomatoes and onions.</p>
+        <div class="price">Ask for price</div>
+      </article>
+      <article class="product" data-name="spaghetti macaroni indomie noodles">
+        <div class="emoji">🍝</div>
+        <h3>Noodles & Pasta</h3>
+        <p>Indomie varieties, spaghetti and macaroni.</p>
+        <div class="price">Ask for price</div>
+      </article>
+      <article class="product" data-name="palm oil groundnut oil">
+        <div class="emoji">🫙</div>
+        <h3>Cooking Oils</h3>
+        <p>Red oil and groundnut oil.</p>
+        <div class="price">Ask for price</div>
+      </article>
+      <article class="product" data-name="spices salt maggi seasoning">
+        <div class="emoji">🧂</div>
+        <h3>Spices & Seasonings</h3>
+        <p>Salt, Maggi and different spices.</p>
+        <div class="price">Ask for price</div>
+      </article>
+      <article class="product" data-name="water drinks sachet bottle cold">
+        <div class="emoji">🥤</div>
+        <h3>Water & Drinks</h3>
+        <p>Pure water and drinks, sold individually or by pack where available.</p>
+        <div class="price">Ask for price</div>
+      </article>
+      <article class="product" data-name="frozen chicken fish eggs">
+        <div class="emoji">🍗</div>
+        <h3>Chicken, Fish & Eggs</h3>
+        <p>Ask us about available frozen foods and eggs.</p>
+        <div class="price">Ask for price</div>
+      </article>
+      <article class="product" data-name="blending milling service pepper tomatoes">
+        <div class="emoji">⚙️</div>
+        <h3>Blending Service</h3>
+        <p>Pepper and tomato blending service available at the shop.</p>
+        <div class="price">Ask for price</div>
+      </article>
+    </div>
+
+    <section class="notice">
+      <strong>Need something else?</strong>
+      <p>We stock other everyday essentials too. Contact us to ask about
+      a product, its current price or availability.</p>
+      <a class="whatsapp" id="whatsappLink" href="#contact">Contact RJ STORE on WhatsApp</a>
+      <p id="contact">Our shop is in Imedu-Nla, Mowe, Ogun State.</p>
+      <p><strong>WhatsApp ordering will be activated after we add the shop's number.</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <strong>RJ STORE</strong>
+    <p>Groceries and everyday essentials</p>
+    <p>Baage Avenue, Imedu-Nla, Mowe, Ogun State.</p>
+    <p>&copy; <span id="year"></span> RJ STORE</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("search").addEventListener("input", function () {
+      const term = this.value.toLowerCase().trim();
+      document.querySelectorAll(".product").forEach(function (product) {
+        product.style.display =
+          product.dataset.name.includes(term) ||
+          product.textContent.toLowerCase().includes(term)
+          ? "" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
